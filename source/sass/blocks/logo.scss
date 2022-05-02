@@ -2,5 +2,10 @@
   @include vp-319 {
     width: 35px;
     height: 35px;
+
+    &--no-mobile-vp {
+      width: 215px;
+      height: 55px;
+    }
   }
 }
