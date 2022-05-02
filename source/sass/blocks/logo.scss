@@ -1,0 +1,6 @@
+.logo__img {
+  @include vp-319 {
+    width: 35px;
+    height: 35px;
+  }
+}
