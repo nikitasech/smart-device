@@ -1,0 +1,59 @@
+.checkbox__label {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 15px;
+  color: rgba($color-default-white, 0.8);
+
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &::before {
+    content: "";
+
+    display: block;
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px $color-default-white;
+
+    transition: opacity $trans-default;
+  }
+}
+
+.checkbox__input:hover + .checkbox__label::before {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    opacity: 0.7;
+  }
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    outline: 1px solid $color-deep-sky-blue;
+  }
+}
+
+
+.checkbox__input:active + .checkbox__label {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    opacity: 0.6;
+  }
+
+  &::before {
+    @media (hover: hover), screen and (min-width: 0\0) {
+      opacity: 0.6;
+    }
+  }
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  background-image: url("../img/icon-check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  background-size: 9px 6px;
+}
