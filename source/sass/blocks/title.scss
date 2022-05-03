@@ -1,0 +1,11 @@
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @include vp-319 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}

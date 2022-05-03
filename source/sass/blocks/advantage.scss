@@ -1,0 +1,80 @@
+.advantage {
+  position: relative;
+
+  width: 595px;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-right: 45px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+
+  background-color: $color-default-white;
+  border: 1px solid #ebebeb;
+  border-left: none;
+
+  transition: background-color  $trans-default;
+
+  @include vp-769 {
+    width: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 5px;
+    height: calc(100% + 2px);
+
+    background-color: $color-deep-sky-blue;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-deep-sky-blue;
+      border: 1px solid $color-deep-sky-blue;
+      border-left: none;
+    }
+  }
+}
+
+.advantage__icon {
+  margin-bottom: 20px;
+
+  transition: fill $trans-default;
+
+  fill: $color-deep-sky-blue;
+}
+
+.advantage:hover .advantage__icon {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    fill: $color-default-white;
+  }
+}
+
+.advantage__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: $color-deep-sky-blue;
+
+  transition: color $trans-default;
+}
+
+.advantage:hover .advantage__title {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    color: $color-default-white;
+  }
+}
+
+.advantage__text {
+  transition: color $trans-default;
+}
+
+.advantage:hover .advantage__text {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    color: $color-default-white;
+  }
+}
