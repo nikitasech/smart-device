@@ -1,8 +1,20 @@
 .contact {
   display: flex;
+  min-width: 225px;
 
   line-height: 18px;
   color: $color-default-white;
+
+  @include vp-769 {
+    min-width: auto;
+
+    font-size: 0;
+
+
+    &::before {
+      margin-right: 0;
+    }
+  }
 
   &::before {
     content: "";
@@ -22,13 +34,4 @@
   &--phone::before {
     background-image: url("../img/icon-phone.svg");
   }
-
-  @include vp-319 {
-    font-size: 0;
-
-    &::before {
-      margin-right: 0;
-    }
-  }
 }
-

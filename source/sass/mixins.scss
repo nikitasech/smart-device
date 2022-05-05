@@ -31,7 +31,7 @@
 }
 
 @mixin vp-769 {
-  @media (max-width: $vp-768 - 1) {
+  @media (max-width: $vp-770 - 1) {
     @content;
   }
 }
