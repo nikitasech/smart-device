@@ -13,8 +13,22 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header>
-
+    <header class="main-header container">
+      <a class="logo">
+        <picture>
+          <source media="(max-width: 320px)" srcset="img/mobile-logo.svg">
+          <img class="logo__img" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+        </picture>
+      </a>
+      <ul class="main-header__contacts">
+        <li class="main-header__contacts-item">
+          <a class="contact contact--email" href="mailto:info@sd.ru">info@sd.ru</a>
+        </li>
+        <li class="main-header__contacts-item">
+          <a class="contact contact--phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+        </li>
+      </ul>
+      <button class="main-header__button button button--white">Заказать звонок</button>
     </header>
     <main>
 

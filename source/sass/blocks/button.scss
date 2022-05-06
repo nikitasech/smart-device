@@ -1,15 +1,18 @@
 .button {
   display: inline-flex;
   padding-top: 15px;
-  padding-right: 15px;
+  padding-right: 17px;
   padding-bottom: 15px;
-  padding-left: 15px;
+  padding-left: 17px;
 
-  font-style: 14px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 17px;
+  font-family: "Roboto Condensed";
   text-align: center;
   color: $color-deep-sky-blue;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 
   background-color: $color-transparent;
   border: 1px solid $color-deep-sky-blue;
