@@ -1,0 +1,83 @@
+.accordion {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+  color: #f8fdff;
+}
+
+.accordion__item {
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  border-top: 1px solid rgba(#f8fdff, 0.7);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(#f8fdff, 0.7);
+  }
+}
+
+.accordion__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.accordion__title-button {
+  position: relative;
+
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: left;
+  color: #f8fdff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+
+    display: block;
+    width: 15px;
+    height: 1px;
+
+    background-color: #f8fdff;
+  }
+
+  &.is-content-closed {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 7px;
+
+      display: block;
+      width: 1px;
+      height: 15px;
+
+      background-color: #f8fdff;
+    }
+  }
+}
+
+.accordion__content {
+  padding-top: 15px;
+
+  &.is-closed {
+    display: none;
+  }
+}
