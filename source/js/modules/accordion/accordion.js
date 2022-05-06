@@ -20,16 +20,18 @@ export class Accordion {
     }
   }
 
-  _resetTabs() {
+  _resetTabs(openedTabNumber) {
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
-      this._elContentsAccordion[tab].classList.add("is-closed");
-      this._elButtonsAccordion[tab].classList.add("is-content-closed");
+      if (tab !== openedTabNumber) {
+        this._elContentsAccordion[tab].classList.add("is-closed");
+        this._elButtonsAccordion[tab].classList.add("is-content-closed");
+      }
     }
   }
 
-  _tabClickHandler(elContent, elButton) {
-    elButton.addEventListener('click', () => {
-      this._resetTabs();
+  _tabClickHandler(elContent, elButton, openedTabNumber) {
+    elButton.addEventListener('click', (evt) => {
+      this._resetTabs(openedTabNumber);
 
       elContent.classList.toggle("is-closed");
       elButton.classList.toggle("is-content-closed");
@@ -40,7 +42,7 @@ export class Accordion {
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
       this._openDefaultTab(tab);
 
-      this._tabClickHandler(this._elContentsAccordion[tab], this._elButtonsAccordion[tab]);
+      this._tabClickHandler(this._elContentsAccordion[tab], this._elButtonsAccordion[tab], tab);
     }
   }
 }
