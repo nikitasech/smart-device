@@ -11,7 +11,7 @@ export class Accordion {
   }
 
   _openDefaultTab(numberTab) {
-    if (numberTab === this.defaultOpenedTab) {
+    if (numberTab == this._defaultOpenedTab) {
       this._elContentsAccordion[numberTab].classList.remove("is-closed");
       this._elButtonsAccordion[numberTab].classList.remove("is-content-closed");
     } else {
@@ -41,7 +41,6 @@ export class Accordion {
   init() {
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
       this._openDefaultTab(tab);
-
       this._tabClickHandler(this._elContentsAccordion[tab], this._elButtonsAccordion[tab], tab);
     }
   }
