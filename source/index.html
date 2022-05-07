@@ -33,9 +33,37 @@
     <main>
 
     </main>
-    <footer>
-
+    <footer class="main-footer">
+      <a class="logo">
+        <picture>
+          <source media="(max-width: 320px)" srcset="img/mobile-logo.svg">
+          <img class="logo__img" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+        </picture>
+      </a>
     </footer>
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Facebook">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Одноклассники">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Вконтакте">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

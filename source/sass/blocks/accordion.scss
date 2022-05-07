@@ -4,7 +4,7 @@
   padding-left: 0;
 
   list-style: none;
-  color: #f8fdff;
+  color: $color-alice-blue;
 }
 
 .accordion__item {
@@ -13,10 +13,10 @@
   padding-bottom: 20px;
   padding-left: 25px;
 
-  border-top: 1px solid rgba(#f8fdff, 0.7);
+  border-top: 1px solid rgba($color-alice-blue, 0.7);
 
   &:last-child {
-    border-bottom: 1px solid rgba(#f8fdff, 0.7);
+    border-bottom: 1px solid rgba($color-alice-blue, 0.7);
   }
 }
 
@@ -37,7 +37,7 @@
   line-height: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: left;
-  color: #f8fdff;
+  color: $color-alice-blue;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
@@ -55,7 +55,7 @@
     width: 15px;
     height: 1px;
 
-    background-color: #f8fdff;
+    background-color: $color-alice-blue;
   }
 
   &.is-content-closed {
@@ -69,7 +69,7 @@
       width: 1px;
       height: 15px;
 
-      background-color: #f8fdff;
+      background-color: $color-alice-blue;
     }
   }
 }
