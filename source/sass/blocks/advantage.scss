@@ -1,7 +1,6 @@
 .advantage {
   position: relative;
 
-  min-width: 400px;
   min-height: 300px;
   padding-top: 40px;
   padding-right: 45px;
@@ -16,6 +15,9 @@
 
   @include vp-1279 {
     width: auto;
+    min-height: 360px;
+    padding-right: 30px;
+    padding-bottom: 28px;
   }
 
   &::before {
@@ -41,11 +43,15 @@
 }
 
 .advantage__icon {
-  margin-bottom: 15px;
+  display: block;
+  margin-bottom: 20px;
 
   transition: fill $trans-default;
 
   fill: $color-deep-sky-blue;
+  @include vp-1279 {
+    margin-bottom: 12px;
+  }
 }
 
 .advantage:hover .advantage__icon {
@@ -65,6 +71,10 @@
   color: $color-deep-sky-blue;
 
   transition: color $trans-default;
+
+  @include vp-1279 {
+    margin-bottom: 7px;
+  }
 }
 
 .advantage:hover .advantage__title {
@@ -76,6 +86,8 @@
 .advantage__text {
   margin-top: 0;
   margin-bottom: 0;
+
+  line-height: 21.6px;
 
   transition: color $trans-default;
 }
