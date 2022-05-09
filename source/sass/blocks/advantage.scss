@@ -19,6 +19,18 @@
     padding-right: 30px;
     padding-bottom: 28px;
   }
+  @include vp-769 {
+    min-height: 325px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+
+    &:nth-child(-n+2) {
+    min-height: 340px;
+
+    }
+  }
 
   &::before {
     content: "";
@@ -52,6 +64,11 @@
   @include vp-1279 {
     margin-bottom: 12px;
   }
+  @include vp-769 {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 17px;
+  }
 }
 
 .advantage:hover .advantage__icon {
@@ -75,6 +92,12 @@
   @include vp-1279 {
     margin-bottom: 7px;
   }
+  @include vp-769 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantage:hover .advantage__title {
@@ -90,6 +113,11 @@
   line-height: 21.6px;
 
   transition: color $trans-default;
+
+  @include vp-769 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .advantage:hover .advantage__text {
