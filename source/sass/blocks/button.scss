@@ -1,5 +1,5 @@
 .button {
-  display: inline-flex;
+  display: inline-block;
   padding-top: 15px;
   padding-right: 17px;
   padding-bottom: 15px;
@@ -8,7 +8,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: center;
   color: $color-deep-sky-blue;
   text-transform: uppercase;
