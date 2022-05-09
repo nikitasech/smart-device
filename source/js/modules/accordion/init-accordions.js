@@ -2,9 +2,10 @@ import {Accordion} from './accordion';
 
 const initAccordions = () => {
   const elAccordions = document.querySelectorAll('[data-accordion]');
+  const MAX_VIEWPORT_SIZE = 770;
 
   for (let i = 0; i < elAccordions.length; i++) {
-    const accordion = new Accordion(elAccordions[i]);
+    const accordion = new Accordion(elAccordions[i], MAX_VIEWPORT_SIZE);
 
     accordion.init();
   }

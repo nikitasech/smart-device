@@ -1,8 +1,9 @@
 export class Accordion {
-  constructor(elAccordion, defaultOpenedTab = 0) {
+  constructor(elAccordion, maxViewportSize, defaultOpenedTab = 0) {
     this._elContentsAccordion = elAccordion.querySelectorAll('[data-accordion-content]');
     this._elButtonsAccordion = elAccordion.querySelectorAll('[data-accordion-button]');
     this._defaultOpenedTab = defaultOpenedTab;
+    this._maxViewportSize = maxViewportSize;
 
     this._resetTabs;
     this._tabClickHandler;
@@ -39,10 +40,16 @@ export class Accordion {
   }
 
   init() {
+    console.log(this._maxViewportSize);
+    console.log(window.innerWidth);
+
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
+      if (this._maxViewportSize <= window.innerWidth) {
+        this._elButtonsAccordion[tab].setAttribute('disabled', '');
+      }
+
       this._openDefaultTab(tab);
       this._tabClickHandler(this._elContentsAccordion[tab], this._elButtonsAccordion[tab], tab);
     }
   }
 }
-

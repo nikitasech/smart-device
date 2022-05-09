@@ -5,16 +5,17 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
   min-height: 120px;
   padding-bottom: 10px;
 
   background: linear-gradient(180deg, $color-black-pearl 85%, transparent 100%);
 
-  @include vp-769 {
+  @include vp-1279 {
     min-height: 100px;
     padding-bottom: 5px;
   }
-  @include vp-319 {
+  @include vp-769 {
     min-height: 70px;
   }
 }
@@ -22,7 +23,7 @@
 .logo {
   min-width: 215px;
 
-  @include vp-769 {
+  @include vp-1279 {
     min-width: auto;
   }
 }
@@ -37,12 +38,12 @@
 
   list-style: none;
 
-  @include vp-769 {
+  @include vp-1279 {
     flex-wrap: nowrap;
     margin-right: 30px;
     margin-bottom: 15px;
   }
-  @include vp-319 {
+  @include vp-769 {
     margin-right: 20px;
     margin-bottom: 5px;
   }
@@ -53,7 +54,7 @@
   margin-right: 27px;
   margin-bottom: 5px;
 
-  @include vp-769 {
+  @include vp-1279 {
     margin-right: 40px;
   }
 
@@ -69,7 +70,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @include vp-769 {
+  @include vp-1279 {
     display: none;
   }
 }

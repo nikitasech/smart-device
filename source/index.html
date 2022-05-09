@@ -16,7 +16,7 @@
     <header class="main-header container">
       <a class="logo">
         <picture>
-          <source media="(max-width: 320px)" srcset="img/mobile-logo.svg">
+          <source media="(max-width: 769px)" srcset="img/mobile-logo.svg">
           <img class="logo__img" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
         </picture>
       </a>
@@ -33,8 +33,76 @@
     <main>
 
     </main>
-    <footer>
-
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo logo">
+          <img class="logo__img logo__img--no-mobile-vp" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+        </a>
+        <ul class="main-footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="" aria-label="Facebook">
+              <svg class="socials__icon" width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="" aria-label="Одноклассники">
+              <svg class="socials__icon" width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="" aria-label="Вконтакте">
+              <svg class="socials__icon" width="30" height="30">
+                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="main-footer__accordion accordion" data-accordion>
+        <li class="accordion__item main-footer__nav">
+          <h2 class="main-footer__nav-title accordion__title">
+            <button class="accordion__title-button" data-accordion-button>Разделы сайта</button>
+          </h2>
+          <ul class="accordion__content main-footer__nav-list" data-accordion-content>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">О Компаниии</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Комплектующие</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Продукты</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Доставка</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Протзводство печатных плат</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Контакты</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="">Монтаж печатных плат</a>
+            </li>
+          </ul>
+        </li>
+        <li class="accordion__item main-footer__office">
+          <h2 class="main-footer__nav-title accordion__title">
+            <button class="accordion__title-button" data-accordion-button>Наш офис</button>
+          </h2>
+          <ul class="accordion__content main-footer__office-list" data-accordion-content>
+            <li class="main-footer__office-item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="main-footer__office-item">+7 (495) 589-40-50</li>
+            <li class="main-footer__office-item">+7 (925) 389-58-29</li>
+            <li class="main-footer__office-item">+7 (925) 364-78-13</li>
+          </ul>
+        </li>
+      </ul>
     </footer>
 
     <script src="js/vendor.min.js"></script>
