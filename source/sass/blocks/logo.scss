@@ -1,9 +1,14 @@
+.logo {
+  display: block;
+}
+
 .logo__img {
-  @include vp-319 {
+  @include vp-769 {
     width: 35px;
     height: 35px;
 
     &--no-mobile-vp {
+      display: block;
       width: 215px;
       height: 55px;
     }
