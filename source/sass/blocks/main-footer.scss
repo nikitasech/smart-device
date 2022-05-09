@@ -42,7 +42,7 @@
   margin-bottom: 30px;
 }
 
-.main-header__socials {
+.main-footer__socials {
   padding-left: 15px;
 
   @include vp-769 {
@@ -84,7 +84,7 @@
   row-gap: 10px;
 }
 
-.main-header__nav-item {
+.main-footer__nav-item {
   @include vp-1279 {
     order: 7;
 
@@ -118,8 +118,14 @@
   }
 }
 
-.main-header__nav-link {
+.main-footer__nav-link {
   color: $color-alice-blue;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .main-footer__office {
