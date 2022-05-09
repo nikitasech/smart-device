@@ -1,0 +1,11 @@
+.main-page__preview {
+  margin-bottom: 120px;
+
+  @include vp-1279 {
+    margin-bottom: 80px;
+  }
+
+  @include vp-769 {
+    margin-bottom: 50px;
+  }
+}

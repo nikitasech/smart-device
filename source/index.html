@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="main-page">
     <header class="main-header container">
       <a class="logo">
         <picture>
@@ -31,7 +31,7 @@
       <button class="main-header__button button button--white">Заказать звонок</button>
     </header>
     <main>
-      <section class="preview container">
+      <section class="main-page__preview preview container">
         <h1 class="visually-hidden">Smart Device</h1>
         <p class="preview__title">Печатные платы</p>
         <p class="preview__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
@@ -39,6 +39,39 @@
           <span class="preview__button-text">Получить бесплатную консультацию</span>
           <span class="preview__button-text preview__button-text--mobile">бесплатная консультация</span>
         </button>
+      </section>
+      <section class="main-page__advantages advantages container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantage">
+            <svg class="advantage__icon" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
+            </svg>
+            <h3 class="advantage__title">Оперативные сроки</h3>
+            <p class="advantage__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="advantage">
+            <svg class="advantage__icon" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-hired"></use>
+            </svg>
+            <h3 class="advantage__title">Крупные поставщики</h3>
+            <p class="advantage__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li class="advantage">
+            <svg class="advantage__icon" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
+            </svg>
+            <h3 class="advantage__title">Полная конфиденциальность</h3>
+            <p class="advantage__text">По желанию клиента &ensp;мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="advantage">
+            <svg class="advantage__icon" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
+            </svg>
+            <h3 class="advantage__title">Персонализация стоимости</h3>
+            <p class="advantage__text">Мы &ensp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="main-footer">
