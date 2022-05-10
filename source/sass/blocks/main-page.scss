@@ -4,8 +4,29 @@
   @include vp-1279 {
     margin-bottom: 80px;
   }
-
   @include vp-769 {
     margin-bottom: 50px;
+  }
+}
+
+.main-page__advantages {
+  margin-bottom: 120px;
+
+  @include vp-1279 {
+    margin-bottom: 80px;
+  }
+  @include vp-769 {
+    margin-bottom: 47px;
+  }
+}
+
+.main-page__about {
+  margin-bottom: 100px;
+
+  @include vp-1279 {
+    margin-bottom: 80px;
+  }
+  @include vp-769 {
+    margin-bottom: 80px;
   }
 }
