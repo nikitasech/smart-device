@@ -31,7 +31,7 @@ export class Accordion {
   }
 
   _tabClickHandler(elContent, elButton, openedTabNumber) {
-    elButton.addEventListener('click', (evt) => {
+    elButton.addEventListener('click', () => {
       this._resetTabs(openedTabNumber);
 
       elContent.classList.toggle("is-closed");
@@ -40,9 +40,6 @@ export class Accordion {
   }
 
   init() {
-    console.log(this._maxViewportSize);
-    console.log(window.innerWidth);
-
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
       if (this._maxViewportSize <= window.innerWidth) {
         this._elButtonsAccordion[tab].setAttribute('disabled', '');
