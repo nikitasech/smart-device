@@ -30,3 +30,15 @@
     margin-bottom: 80px;
   }
 }
+
+.main-page__catalog {
+  padding-top: 65px;
+
+  @include vp-1279 {
+    padding-top: 55px;
+  }
+
+  @include vp-769 {
+    padding-top: 48px;
+  }
+}

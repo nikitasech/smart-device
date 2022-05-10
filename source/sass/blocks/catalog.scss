@@ -1,0 +1,34 @@
+.catalog {
+  background-color: $color-black-pearl;
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 55px;
+
+  color: $color-alice-blue;
+
+  @include vp-1279 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-769 {
+    margin-bottom: 28px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+  column-gap: 85px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  @include vp-1279 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}

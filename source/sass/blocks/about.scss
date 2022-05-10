@@ -25,11 +25,6 @@
   margin-top: 0;
   margin-bottom: 13px;
 
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-
   @include vp-1279 {
     margin-bottom: 15px;
 
@@ -37,9 +32,6 @@
   }
   @include vp-769 {
     margin-bottom: 13px;
-
-    font-size: 28px;
-    line-height: 39px;
   }
 }
 
