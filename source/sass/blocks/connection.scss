@@ -22,6 +22,10 @@
   @include vp-1279 {
     margin-bottom: 7px;
   }
+  @include vp-769 {
+    font-size: 30px;
+    line-height: 42px;
+  }
 }
 
 .connection__text {
@@ -32,6 +36,12 @@
   @include vp-1279 {
     margin-bottom: 25px;
     margin-left: -5px;
+  }
+  @include vp-769 {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
@@ -50,6 +60,14 @@
     width: calc(100% + 15px);
     margin-left: -5px;
   }
+  @include vp-769 {
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    line-height: 19px;
+
+    grid-template-columns: 1fr;
+  }
   row-gap: 20px;
 }
 
@@ -58,6 +76,9 @@
 
   &--textarea {
     grid-column: span 2;
+    @include vp-769 {
+      grid-column: auto;
+    }
   }
 
   &--checkbox {
@@ -69,6 +90,12 @@
       margin-left: 0;
       padding-top: 21px;
     }
+
+    @include vp-769 {
+      margin-left: 0;
+      padding-top: 4px;
+      padding-left: 5px;
+    }
   }
 
   &--button {
@@ -78,6 +105,10 @@
 
     @include vp-1279 {
       margin-right: 55px;
+    }
+    @include vp-769 {
+      margin-top: 5px;
+      margin-right: 0;
     }
   }
 }
