@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initAccordions} from './modules/accordion/init-accordions';
 import {initExpanders} from './modules/expander/init-expanders';
+import {initPhoneMask} from './modules/phone-mask/init-phone-mask';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initAccordions();
     initExpanders();
+    initPhoneMask();
   });
 });
 
