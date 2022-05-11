@@ -56,4 +56,8 @@
 
 .text-field--textarea .text-field__label {
   top: 25px;
+
+  @include vp-1279 {
+    top: 32px;
+  }
 }

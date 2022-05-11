@@ -8,17 +8,31 @@
   #036693 636px, $color-deep-sky-blue 638px);
   background-repeat: no-repeat;
   background-position: 350px 246px, 0 0;
+
+  @include vp-1279 {
+    background-color: $color-deep-sky-blue;
+    background-image: none;
+  }
 }
 
 .connection__title {
   margin-top: 0;
   margin-bottom: 11px;
+
+  @include vp-1279 {
+    margin-bottom: 7px;
+  }
 }
 
 .connection__text {
   margin-top: 0;
   margin-bottom: 35px;
   padding-left: 5px;
+
+  @include vp-1279 {
+    margin-bottom: 25px;
+    margin-left: -5px;
+  }
 }
 
 .connection__list {
@@ -32,6 +46,10 @@
   column-gap: 30px;
 
   grid-template-columns: 1fr 1fr;
+  @include vp-1279 {
+    width: calc(100% + 15px);
+    margin-left: -5px;
+  }
   row-gap: 20px;
 }
 
@@ -46,12 +64,21 @@
     order: 1;
     margin-left: 10px;
     padding-top: 25px;
+
+    @include vp-1279 {
+      margin-left: 0;
+      padding-top: 21px;
+    }
   }
 
   &--button {
     order: 0;
     margin-top: 10px;
     margin-right: 10px;
+
+    @include vp-1279 {
+      margin-right: 55px;
+    }
   }
 }
 

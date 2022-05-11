@@ -37,6 +37,7 @@
 
   @include vp-1279 {
     padding-top: 55px;
+    padding-bottom: 75px;
   }
   @include vp-769 {
     padding-top: 48px;
@@ -46,4 +47,9 @@
 .main-page__connection {
   padding-top: 165px;
   padding-bottom: 250px;
+
+  @include vp-1279 {
+    padding-top: 45px;
+    padding-bottom: 125px;
+  }
 }
