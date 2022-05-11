@@ -107,6 +107,34 @@
           </li>
         </ul>
       </section>
+      <section class="main-page__connection connection container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p class="connection__title title">Остались вопросы? Задайте их нам!</p>
+        <p class="connection__text">Мы проконсультируем Вас бесплатно</p>
+        <form class="connection__form" action="https://echo.htmlacademy.ru" method="get">
+          <ul class="connection__list">
+            <li class="connection__item text-field">
+              <input class="text-field__input" type="text" id="username" name="username" placeholder="Ваня" required>
+              <label class="text-field__label" for="username">Имя</label>
+            </li>
+            <li class="connection__item text-field">
+              <input class="text-field__input" type="text" id="telephone" name="telephone" placeholder="+7 (915) 218-54-58" required>
+              <label class="text-field__label" for="telephone">Телефон</label>
+            </li>
+            <li class="connection__item connection__item--textarea text-field text-field--textarea">
+              <textarea class="text-field__input" id="question" name="question" placeholder="Сколько стоит задать вопрос?"></textarea>
+              <label class="text-field__label" for="question">Ваш вопрос</label>
+            </li>
+            <li class="connection__item connection__item--checkbox checkbox">
+              <input class="checkbox__input visually-hidden" id="processing" type="checkbox" name="processing" checked>
+              <label class="checkbox__label" for="processing" checked>Я согласен на обработку  персональных данных</label>
+            </li>
+            <li class="connection__item connection__item--button">
+              <input class="connection__button button button--black button--bg-black" type="submit" value="Задать вопрос">
+            </li>
+          </ul>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">

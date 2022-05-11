@@ -33,12 +33,17 @@
 
 .main-page__catalog {
   padding-top: 65px;
+  padding-bottom: 140px;
 
   @include vp-1279 {
     padding-top: 55px;
   }
-
   @include vp-769 {
     padding-top: 48px;
   }
+}
+
+.main-page__connection {
+  padding-top: 165px;
+  padding-bottom: 250px;
 }
