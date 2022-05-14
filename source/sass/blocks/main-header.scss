@@ -23,15 +23,7 @@
   }
 }
 
-.logo {
-  min-width: 215px;
-
-  @include vp-1279 {
-    min-width: auto;
-  }
-}
-
-.main-header__contacts {
+.main-header ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -52,7 +44,7 @@
   }
 }
 
-.main-header__contacts-item {
+.main-header li {
   margin-top: 5px;
   margin-right: 27px;
   margin-bottom: 5px;

@@ -17,6 +17,21 @@
   }
 }
 
+.catalog__main-title {
+  @include vp-769 {
+    display: none;
+  }
+}
+
+.catalog__mobile-title {
+  display: none;
+  width: 200px;
+
+  @include vp-769 {
+    display: block;
+  }
+}
+
 .catalog__list {
   display: grid;
   margin-top: 0;

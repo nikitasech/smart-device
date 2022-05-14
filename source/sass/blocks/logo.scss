@@ -10,15 +10,17 @@
   }
 }
 
-.logo__img {
+.logo img {
   @include vp-769 {
     width: 35px;
     height: 35px;
+  }
+}
 
-    &--no-mobile-vp {
-      display: block;
-      width: 215px;
-      height: 55px;
-    }
+.logo--no-mobile-vp img {
+  @include vp-769 {
+    display: block;
+    width: 215px;
+    height: 55px;
   }
 }
