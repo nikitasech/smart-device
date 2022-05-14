@@ -12,7 +12,7 @@ export class Accordion {
   }
 
   _openDefaultTab(numberTab) {
-    if (numberTab == this._defaultOpenedTab) {
+    if (numberTab === this._defaultOpenedTab && this._defaultOpenedTab) {
       this._elContentsAccordion[numberTab].classList.remove("is-closed");
       this._elButtonsAccordion[numberTab].classList.remove("is-content-closed");
     } else {

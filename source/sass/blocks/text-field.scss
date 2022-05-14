@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.text-field__label {
+.text-field label {
   position: absolute;
   top: calc(50% - 10px);
   left: 15px;
@@ -17,7 +17,8 @@
   }
 }
 
-.text-field__input {
+.text-field input,
+.text-field textarea {
   box-sizing: border-box;
   min-width: 100%;
   height: 50px;
@@ -51,11 +52,12 @@
   }
 }
 
-.text-field__input:focus + .text-field__label {
+.text-field input:focus + label,
+.text-field textarea:focus + label {
   visibility: hidden;
 }
 
-.text-field--textarea .text-field__input {
+.text-field--textarea textarea {
   height: 155px;
   padding-top: 25px;
   padding-right: 15px;
@@ -67,7 +69,7 @@
   }
 }
 
-.text-field--textarea .text-field__label {
+.text-field--textarea label {
   top: 25px;
 
   @include vp-1279 {

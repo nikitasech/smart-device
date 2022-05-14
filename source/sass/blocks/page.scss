@@ -1,4 +1,4 @@
-.main-page__preview {
+.page__preview {
   margin-bottom: 120px;
 
   @include vp-1279 {
@@ -9,7 +9,7 @@
   }
 }
 
-.main-page__advantages {
+.page__advantages {
   margin-bottom: 120px;
 
   @include vp-1279 {
@@ -20,7 +20,7 @@
   }
 }
 
-.main-page__about {
+.page__about {
   margin-bottom: 100px;
 
   @include vp-1279 {
@@ -31,7 +31,7 @@
   }
 }
 
-.main-page__catalog {
+.page__catalog {
   padding-top: 65px;
   padding-bottom: 140px;
 
@@ -45,7 +45,7 @@
   }
 }
 
-.main-page__connection {
+.page__connection {
   padding-top: 165px;
   padding-bottom: 250px;
 
