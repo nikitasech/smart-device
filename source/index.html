@@ -112,26 +112,26 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="connection__title title">Остались вопросы? Задайте их нам!</p>
         <p class="connection__text">Мы проконсультируем Вас бесплатно</p>
-        <form class="connection__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="connection__form form" action="https://echo.htmlacademy.ru" method="get">
           <ul class="connection__list">
-            <li class="connection__item text-field">
+            <li class="connection__item form__field">
               <input type="text" id="username" name="username" placeholder="Ваня" required>
               <label for="username">Имя</label>
             </li>
-            <li class="connection__item text-field">
+            <li class="connection__item form__field">
               <input type="text" id="telephone" name="telephone" placeholder="+7 (915) 218-54-58" maxlength="18" required data-phone-mask>
               <label for="telephone">Телефон</label>
             </li>
-            <li class="connection__item connection__item--textarea text-field text-field--textarea">
+            <li class="connection__item connection__item--textarea form__field form__field--textarea">
               <textarea id="question" name="question" placeholder="Сколько стоит задать вопрос?"></textarea>
               <label for="question">Ваш вопрос</label>
             </li>
-            <li class="connection__item connection__item--checkbox checkbox">
+            <li class="connection__item connection__item--checkbox form__checkbox">
               <input id="processing" type="checkbox" name="processing" checked>
               <label for="processing">Я согласен на обработку  персональных данных</label>
             </li>
             <li class="connection__item connection__item--button">
-              <input class="connection__button button button--black button--bg-black" type="submit" value="Задать вопрос">
+              <input type="submit" value="Задать вопрос">
             </li>
           </ul>
         </form>
@@ -213,26 +213,26 @@
       <div class="modal__content order-call">
         <h2 class="order-call__title">Закажите звонок</h2>
         <p class="order-call__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="order-call__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="order-call__form form" action="https://echo.htmlacademy.ru" method="get">
           <ul class="order-call__list">
-            <li class="order-call__item text-field">
+            <li class="order-call__item form__field">
               <input type="text" id="modal-username" name="username" placeholder="Ваня" required>
               <label for="modal-username">Имя</label>
             </li>
-            <li class="order-call__item text-field">
+            <li class="order-call__item  form__field">
               <input type="text" id="modal-telephone" name="telephone" placeholder="+7 (915) 218-54-58" maxlength="18" required data-phone-mask>
               <label for="modal-telephone">Телефон</label>
             </li>
-            <li class="order-call__item order-call__item--last-text-field text-field text-field--textarea">
+            <li class="order-call__item order-call__item--last-text-field  form__field  form__field--textarea">
               <textarea id="modal-question" name="question" placeholder="Сколько стоит задать вопрос?"></textarea>
               <label for="modal-question">Ваш вопрос</label>
             </li>
-            <li class="order-call__item order-call__item--checkbox checkbox">
+            <li class="order-call__item order-call__item--checkbox form__checkbox">
               <input id="modal-processing" type="checkbox" name="processing" checked>
               <label for="modal-processing">Я согласен на обработку &ensp;персональных данных</label>
             </li>
             <li class="order-call__item">
-              <input class="order-call__button button button--black button--bg-black" type="submit" value="Отправить">
+              <input type="submit" value="Отправить">
             </li>
           </ul>
         </form>
