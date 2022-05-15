@@ -19,19 +19,19 @@ export class PhoneMask {
   }
 
   _preventSymbolAxceptNumber(evt) {
-    if (isNaN(-evt.data) || evt.data === ' ') {
+    if (isNaN(-evt.data) || evt.data === ` `) {
       this._elInput.value = this._elInput.value.slice(0, -1);
     }
   }
 
   _limitByMask(evt) {
-    while (this._matrix[this._position] !== '_' && this._matrix[this._position]) {
+    while (this._matrix[this._position] !== `_` && this._matrix[this._position]) {
       if (
         this._position <= this._startPosition ||
         this._elInput.value.substring(0, this._startPosition) !== this._start
       ) {
         this._elInput.value = this._start;
-      } else if (evt.inputType === 'deleteContentBackward') {
+      } else if (evt.inputType === `deleteContentBackward`) {
         this._elInput.value = this._elInput.value.slice(0, -1);
       } else {
         this._elInput.value += this._matrix[this._position];
@@ -43,7 +43,7 @@ export class PhoneMask {
   _inputChangeHandler() {
     this._preventDelStart();
 
-    this._elInput.addEventListener('input', this._addListeners.bind(this));
+    this._elInput.addEventListener(`input`, this._addListeners.bind(this));
   }
 
   _addListeners(evt) {
@@ -55,7 +55,7 @@ export class PhoneMask {
   }
 
   init() {
-    this._startPosition = this._matrix.indexOf('_');
+    this._startPosition = this._matrix.indexOf(`_`);
     this._position = this._startPosition;
     this._start = this._matrix.substring(0, this._position);
 

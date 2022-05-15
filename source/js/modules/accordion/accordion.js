@@ -1,7 +1,7 @@
 export class Accordion {
   constructor(elAccordion, maxViewportSize, defaultOpenedTab = 0) {
-    this._elContentsAccordion = elAccordion.querySelectorAll('[data-accordion-content]');
-    this._elButtonsAccordion = elAccordion.querySelectorAll('[data-accordion-button]');
+    this._elContentsAccordion = elAccordion.querySelectorAll(`[data-accordion-content]`);
+    this._elButtonsAccordion = elAccordion.querySelectorAll(`[data-accordion-button]`);
     this._defaultOpenedTab = defaultOpenedTab;
     this._maxViewportSize = maxViewportSize;
 
@@ -13,36 +13,36 @@ export class Accordion {
 
   _openDefaultTab(numberTab) {
     if (numberTab === this._defaultOpenedTab && this._defaultOpenedTab) {
-      this._elContentsAccordion[numberTab].classList.remove("is-closed");
-      this._elButtonsAccordion[numberTab].classList.remove("is-content-closed");
+      this._elContentsAccordion[numberTab].classList.remove(`is-closed`);
+      this._elButtonsAccordion[numberTab].classList.remove(`is-content-closed`);
     } else {
-      this._elContentsAccordion[numberTab].classList.add("is-closed");
-      this._elButtonsAccordion[numberTab].classList.add("is-content-closed");
+      this._elContentsAccordion[numberTab].classList.add(`is-closed`);
+      this._elButtonsAccordion[numberTab].classList.add(`is-content-closed`);
     }
   }
 
   _resetTabs(openedTabNumber) {
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
       if (tab !== openedTabNumber) {
-        this._elContentsAccordion[tab].classList.add("is-closed");
-        this._elButtonsAccordion[tab].classList.add("is-content-closed");
+        this._elContentsAccordion[tab].classList.add(`is-closed`);
+        this._elButtonsAccordion[tab].classList.add(`is-content-closed`);
       }
     }
   }
 
   _tabClickHandler(elContent, elButton, openedTabNumber) {
-    elButton.addEventListener('click', () => {
+    elButton.addEventListener(`click`, () => {
       this._resetTabs(openedTabNumber);
 
-      elContent.classList.toggle("is-closed");
-      elButton.classList.toggle("is-content-closed");
+      elContent.classList.toggle(`is-closed`);
+      elButton.classList.toggle(`is-content-closed`);
     });
   }
 
   init() {
     for (let tab = 0; tab < this._elButtonsAccordion.length; tab++) {
       if (this._maxViewportSize <= window.innerWidth) {
-        this._elButtonsAccordion[tab].setAttribute('disabled', '');
+        this._elButtonsAccordion[tab].setAttribute(`disabled`, ``);
       }
 
       this._openDefaultTab(tab);

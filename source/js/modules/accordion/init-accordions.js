@@ -1,7 +1,7 @@
 import {Accordion} from './accordion';
 
 const initAccordions = () => {
-  const elAccordions = document.querySelectorAll('[data-accordion]');
+  const elAccordions = document.querySelectorAll(`[data-accordion]`);
   const MAX_VIEWPORT_SIZE = 770;
   const DEFAULT_OPEN_TAB = undefined;
 
