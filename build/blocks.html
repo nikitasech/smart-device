@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Производство и монтаж, поставка комплектующих, блоков и модулей">
+    <title>Компоненты Smart Device</title>
+    <link rel="preload" href="fonts/rouble.woff2" as="font">
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="container" style="background: linear-gradient(135deg, #000, #fff)">
+    <a class="logo">
+      <picture>
+        <source media="(max-width: 320px)" srcset="img/mobile-logo.svg">
+        <img class="logo__img" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+      </picture>
+    </a>
+    <br>
+    <br>
+    <a class="logo">
+      <img class="logo__img logo__img--no-mobile-vp" src="img/desktop-logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+    </a>
+    <br>
+    <br>
+    <a class="contact contact--email" href="mailto:info@sd.ru">info@sd.ru</a>
+    <br>
+    <a class="contact contact--phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+    <br>
+    <br>
+    <button class="button">Подробнее</button>
+    <br>
+    <br>
+    <a class="button button--white" href="">Получить бесплатную консультацию</a>
+    <br>
+    <br>
+    <a class="button button--black" href="">Задать вопрос</a>
+    <br>
+    <br>
+    <a class="button button--black button--bg-black" href="">Задать вопрос</a>
+    <br>
+    <br>
+    <a class="button button--bg-blue" href="">Бесплатная косультация</a>
+    <br>
+    <br>
+    <div class="advantage">
+      <svg class="advantage__icon" width="35" height="35">
+        <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
+      </svg>
+      <h3 class="advantage__title">Оперативные сроки</h3>
+      <p class="advantage__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+    </div>
+    <br>
+    <br>
+    <h2 class="title">О компании</h2>
+    <br>
+    <br>
+    <div class="checkbox">
+      <input class="checkbox__input visually-hidden" id="processing" type="checkbox" name="processing" checked>
+      <label class="checkbox__label" for="processing">Я согласен на обработку  персональных данных</label>
+    </div>
+    <br>
+    <br>
+    <div class="text-field">
+      <label class="text-field__label" for="username">Имя</label>
+      <input class="text-field__input" type="text" id="username" name="username" placeholder="Ваня" required>
+    </div>
+    <br>
+    <br>
+    <ul class="accordion" data-accordion style="background-color: #000;">
+      <li class="accordion__item">
+        <h3 class="accordion__title">
+          <button class="accordion__title-button" data-accordion-button>Разделы сайта</button>
+        </h3>
+        <div class="accordion__content" data-accordion-content>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perferendis sapiente quisquam nobis alias sit, vitae illo qui placeat similique, aperiam dolores, beatae eos cum ut quod eligendi quae tenetur!</span>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <h3 class="accordion__title">
+          <button class="accordion__title-button" data-accordion-button>Наш офис</button>
+        </h3>
+        <div class="accordion__content" data-accordion-content>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perferendis sapiente quisquam nobis alias sit, vitae illo qui placeat similique, aperiam dolores, beatae eos cum ut quod eligendi quae tenetur!</span>
+        </div>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Facebook">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Одноклассники">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="" aria-label="Вконтакте">
+          <svg class="socials__icon" width="30" height="30">
+            <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <input value="" data-phone-mask maxlength="18">
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
