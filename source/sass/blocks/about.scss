@@ -48,10 +48,10 @@
     height: 205px;
     margin-bottom: 16px;
   }
+}
 
-  &.is-opened {
-    height: auto;
-  }
+.about__content.is-opened {
+  height: auto;
 }
 
 .about p {

@@ -63,20 +63,22 @@
 
       background-color: $color-alice-blue;
     }
+  }
+}
 
-    &.is-content-closed {
-      &::after {
-        content: "";
-        position: absolute;
-        top: -3px;
-        right: 7px;
+.accordion__title-button.is-content-closed {
+  @include vp-769 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      right: 7px;
 
-        display: block;
-        width: 1px;
-        height: 15px;
+      display: block;
+      width: 1px;
+      height: 15px;
 
-        background-color: $color-alice-blue;
-      }
+      background-color: $color-alice-blue;
     }
   }
 }
@@ -84,9 +86,11 @@
 .accordion__content {
   @include vp-769 {
     padding-top: 15px;
+  }
+}
 
-    &.is-closed {
-      display: none;
-    }
+.accordion__content.is-closed {
+  @include vp-769 {
+    display: none;
   }
 }
