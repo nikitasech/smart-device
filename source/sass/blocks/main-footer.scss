@@ -13,6 +13,7 @@
     padding-bottom: 65px;
     padding-left: 50px;
   }
+
   @include vp-769 {
     padding-top: 35px;
     padding-right: 0;
@@ -31,6 +32,7 @@
     margin-right: 0;
     margin-bottom: 28px;
   }
+
   @include vp-769 {
     flex-direction: column;
     justify-content: start;
@@ -44,6 +46,7 @@
   @include vp-1279 {
     margin-bottom: 0;
   }
+
   @include vp-769 {
     margin-bottom: 13px;
   }
@@ -55,6 +58,7 @@
   @include vp-1279 {
     padding-top: 8px;
   }
+
   @include vp-769 {
     padding-left: 5px;
   }
@@ -89,9 +93,11 @@
 
   grid-auto-flow: row;
   grid-template-columns: repeat(2, 220px);
+
   @include vp-1279 {
     grid-template-columns: repeat(1, 220px);
   }
+
   row-gap: 10px;
 }
 
@@ -145,6 +151,7 @@
   @include vp-1279 {
     width: 320px;
   }
+
   @include vp-769 {
     width: auto;
   }

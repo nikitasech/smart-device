@@ -758,7 +758,7 @@ img {
   background-size: 9px 6px;
 }
 
-.form input[type=submit] {
+.form input[type="submit"] {
   display: inline-block;
   width: 100%;
   height: 45px;
@@ -784,7 +784,7 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.form input[type=submit]:disabled {
+.form input[type="submit"]:disabled {
   opacity: 0.4;
   pointer-events: none;
 }
@@ -851,7 +851,7 @@ img {
   background-size: 350px 650px;
 }
 
-.product:after {
+.product::after {
   content: "";
   position: absolute;
   right: 0;
@@ -1071,7 +1071,6 @@ img {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
   padding-left: 12px;
   list-style: none;
 }
@@ -1453,7 +1452,7 @@ img {
     opacity: 0.6;
   }
 
-  .form input[type=submit]:hover {
+  .form input[type="submit"]:hover {
     opacity: 0.6;
   }
 
@@ -1476,7 +1475,7 @@ img {
     color: #ffffff;
   }
 
-  .product:hover:after {
+  .product:hover::after {
     opacity: 0.6;
   }
 
@@ -1545,7 +1544,7 @@ img {
     background-size: 100% auto;
   }
 
-  .product:after {
+  .product::after {
     background-position: 30px center;
   }
 
@@ -1829,7 +1828,7 @@ img {
     padding-left: 30px;
   }
 
-  .product:after {
+  .product::after {
     width: 40px;
     height: 40px;
     background-position: 20px center;

@@ -12,6 +12,7 @@
   @include retina {
     background-image: url("../img/desktop-preview-background@2x.jpg");
   }
+
   @include vp-1279 {
     min-height: 640px;
     padding-top: 180px;
@@ -25,6 +26,7 @@
       background-image: url("../img/tablet-preview-background@2x.jpg");
     }
   }
+
   @include vp-769 {
     min-height: 560px;
     padding-top: 150px;
@@ -58,6 +60,7 @@
     font-size: 64px;
     line-height: 75px;
   }
+
   @include vp-769 {
     margin-bottom: 7px;
 
@@ -79,6 +82,7 @@
     width: auto;
     margin-bottom: 57px;
   }
+
   @include vp-769 {
     margin-bottom: 45px;
 
@@ -98,6 +102,7 @@
   @include vp-1279 {
     margin-left: 45px;
   }
+
   @include vp-769 {
     width: 100%;
     min-height: 40px;

@@ -17,9 +17,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-  transform $trans-modal,
-  visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
 
   pointer-events: none;
 
@@ -79,7 +77,6 @@
 
   box-sizing: border-box;
   width: 500px;
-  // padding: 40px;
   padding-top: 37px;
   padding-right: 40px;
   padding-bottom: 37px;
