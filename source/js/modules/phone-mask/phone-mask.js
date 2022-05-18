@@ -1,66 +1,66 @@
 export class PhoneMask {
   constructor(elInput, matrix) {
-    this._elInput = elInput;
-    this._matrix = matrix;
-    this._startPosition = null;
-    this._position = null;
-    this._start = null;
+    this.elInput = elInput;
+    this.matrix = matrix;
+    this.startPosition = null;
+    this.position = null;
+    this.start = null;
 
     this.init = this.init;
   }
 
-  _preventDelStart() {
+  preventDelStart() {
     if (
-      this._position <= this._startPosition ||
-      this._elInput.value.substring(0, this._startPosition) !== this._start
+      this.position <= this.startPosition ||
+      this.elInput.value.substring(0, this.startPosition) !== this.start
     ) {
-      this._elInput.value = this._start;
+      this.elInput.value = this.start;
     }
   }
 
-  _preventSymbolAxceptNumber(evt) {
+  preventSymbolAxceptNumber(evt) {
     if (isNaN(-evt.data) || evt.data === ' ') {
-      this._elInput.value = this._elInput.value.slice(0, -1);
+      this.elInput.value = this.elInput.value.slice(0, -1);
     }
   }
 
-  _limitByMask(evt) {
-    while (this._matrix[this._position] !== '_' && this._matrix[this._position]) {
+  limitByMask(evt) {
+    while (this.matrix[this.position] !== '_' && this.matrix[this.position]) {
       if (
-        this._position <= this._startPosition ||
-        this._elInput.value.substring(0, this._startPosition) !== this._start
+        this.position <= this.startPosition ||
+        this.elInput.value.substring(0, this.startPosition) !== this.start
       ) {
-        this._elInput.value = this._start;
+        this.elInput.value = this.start;
       } else if (evt.inputType === 'deleteContentBackward') {
-        this._elInput.value = this._elInput.value.slice(0, -1);
+        this.elInput.value = this.elInput.value.slice(0, -1);
       } else {
-        this._elInput.value += this._matrix[this._position];
+        this.elInput.value += this.matrix[this.position];
       }
-      this._position = this._elInput.value.length;
+      this.position = this.elInput.value.length;
     }
   }
 
-  _inputChangeHandler() {
-    this._preventDelStart();
+  inputChangeHandler() {
+    this.preventDelStart();
 
-    this._elInput.addEventListener('input', this._addListeners.bind(this));
+    this.elInput.addEventListener('input', this.addListeners.bind(this));
   }
 
-  _addListeners(evt) {
+  addListeners(evt) {
     evt.preventDefault();
-    this._preventSymbolAxceptNumber(evt);
+    this.preventSymbolAxceptNumber(evt);
 
-    this._position = this._elInput.value.length;
-    this._limitByMask(evt);
+    this.position = this.elInput.value.length;
+    this.limitByMask(evt);
   }
 
   init() {
-    this._startPosition = this._matrix.indexOf('_');
-    this._position = this._startPosition;
-    this._start = this._matrix.substring(0, this._position);
+    this.startPosition = this.matrix.indexOf('_');
+    this.position = this.startPosition;
+    this.start = this.matrix.substring(0, this.position);
 
-    this._elInput.value = this._start;
+    this.elInput.value = this.start;
 
-    this._inputChangeHandler();
+    this.inputChangeHandler();
   }
 }
