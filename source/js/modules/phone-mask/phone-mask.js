@@ -19,7 +19,7 @@ export class PhoneMask {
   }
 
   preventSymbolAxceptNumber(evt) {
-    if (isNaN(-evt.data) || evt.data === ' ') {
+    if (isNaN(-evt.data) || evt.data === '_') {
       this.elInput.value = this.elInput.value.slice(0, -1);
     }
   }
