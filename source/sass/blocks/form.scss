@@ -53,7 +53,9 @@
 }
 
 .form__field input:focus + label,
-.form__field textarea:focus + label {
+.form__field input:not(:placeholder-shown) + label,
+.form__field textarea:focus + label,
+  .form__field textarea:not(:placeholder-shown) + label {
   visibility: hidden;
 }
 
