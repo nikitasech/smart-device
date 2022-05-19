@@ -60,12 +60,12 @@ const sprite = () => {
 };
 
 const copySvg = () => {
-  return gulp.src('source/img/**/*.svg', {base: 'source'})
+  return gulp.src('source/img/*.svg', {base: 'source'})
       .pipe(gulp.dest('build'));
 };
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
+  return gulp.src('source/img/*.{png,jpg,webp}', {base: 'source'})
       .pipe(gulp.dest('build'));
 };
 
@@ -73,7 +73,7 @@ const copy = () => {
   return gulp.src([
     'source/**.html',
     'source/fonts/**',
-    'source/img/**',
+    'source/img/*.{png,jpg,webp,svg}',
     'source/favicon/**',
   ], {
     base: 'source',
