@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: 350px 650px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-height: 250px;
     padding-top: 37px;
     padding-right: 45px;
@@ -22,7 +22,7 @@
     background-size: 100% auto;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     padding-top: 26px;
     padding-right: 30px;
     padding-bottom: 26px;
@@ -48,11 +48,11 @@
 
     transition: opacity $trans-default;
 
-    @include vp-1279 {
+    @include vp-1023 {
       background-position: 30px center;
     }
 
-    @include vp-769 {
+    @include vp-767 {
       width: 40px;
       height: 40px;
 
@@ -68,7 +68,7 @@
   }
 
   &--production {
-    @include vp-1279 {
+    @include vp-1023 {
       background-image: url("../img/tablet-catalog-production@1x.jpg");
 
       @include retina {
@@ -76,7 +76,7 @@
       }
     }
 
-    @include vp-769 {
+    @include vp-767 {
       background-image: url("../img/mobile-catalog-production@1x.jpg");
 
       @include retina {
@@ -94,7 +94,7 @@
   }
 
   &--montage {
-    @include vp-1279 {
+    @include vp-1023 {
       background-image: url("../img/tablet-catalog-montage@1x.jpg");
 
       @include retina {
@@ -102,7 +102,7 @@
       }
     }
 
-    @include vp-769 {
+    @include vp-767 {
       background-image: url("../img/mobile-catalog-montage@1x.jpg");
 
       @include retina {
@@ -120,7 +120,7 @@
   }
 
   &--accessories {
-    @include vp-1279 {
+    @include vp-1023 {
       background-image: url("../img/tablet-catalog-accessories@1x.jpg");
 
       @include retina {
@@ -128,7 +128,7 @@
       }
     }
 
-    @include vp-769 {
+    @include vp-767 {
       background-image: url("../img/mobile-catalog-accessories@1x.jpg");
 
       @include retina {
@@ -158,11 +158,11 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $color-default-white;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 150px;
   }
 
-  @include vp-769 {
+  @include vp-767 {
     width: 135px;
 
     font-size: 18px;
