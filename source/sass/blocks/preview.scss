@@ -7,7 +7,7 @@
   background-image: url("../img/desktop-preview-background@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1920px 880px;
+  background-size: cover;
 
   @include retina {
     background-image: url("../img/desktop-preview-background@2x.jpg");
