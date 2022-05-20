@@ -1,11 +1,10 @@
 .connection {
   padding-left: calc(((100% - 1220px) / 2) + 625px);
-
   color: $color-default-white;
 
-  background-image: url("../img/desktop-paper-airplane@1x.png"), linear-gradient(139deg, #036693 636px, $color-deep-sky-blue 638px);
+  background-image: url("../img/desktop-paper-airplane@1x.png"), linear-gradient(139.2deg, #036693 calc((100% - 1220px + 600px) / 2), $color-deep-sky-blue calc((100% - 1220px + 602px) / 2));
   background-repeat: no-repeat;
-  background-position: 350px 246px, 0 0;
+  background-position: calc((100% - 1220px + 510px) / 2) 246px, 0 0;
 
   @include vp-1279 {
     background-color: $color-deep-sky-blue;
