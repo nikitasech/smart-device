@@ -1476,7 +1476,7 @@ img {
   }
 
   .form__checkbox input:focus + label::before {
-    outline: 1px solid #00b2ff;
+    outline: 1px solid rgba(255, 255, 255, 0.7);
   }
 
   .form__checkbox input:active + label {
