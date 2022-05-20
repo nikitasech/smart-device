@@ -450,7 +450,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1185,6 +1185,9 @@ img {
 
 .main-footer__nav-link {
   color: #f8fdff;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .main-footer__office {
