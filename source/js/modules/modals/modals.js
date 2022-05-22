@@ -97,9 +97,8 @@ export class Modals {
 
   modalClickHandler(evt) {
     const target = evt.target;
-    const modal = document.querySelector(`[data-modal='${this.modalName}']`);
 
-    if (!target.closest('[data-close-modal]') || evt.target !== modal) {
+    if (!target.closest('[data-close-modal]') && target.closest('[data-modal-content]')) {
       return;
     }
 
