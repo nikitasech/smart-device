@@ -450,7 +450,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -858,7 +858,8 @@ img {
   padding-left: 40px;
   background-color: #1b4b70;
   background-repeat: no-repeat;
-  background-size: 350px 650px;
+  background-position: center;
+  background-size: cover;
 }
 
 .product::after {
@@ -958,9 +959,7 @@ img {
   box-sizing: border-box;
   width: 500px;
   margin-top: 15px;
-  margin-right: auto;
   margin-bottom: 15px;
-  margin-left: auto;
   padding-top: 37px;
   padding-right: 40px;
   padding-bottom: 37px;
@@ -1510,9 +1509,10 @@ img {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .product--production {
     background-image: url("../img/desktop-catalog-production@1x.jpg");
+    background-position: right;
   }
 
   .product--montage {
@@ -1521,10 +1521,11 @@ img {
 
   .product--accessories {
     background-image: url("../img/desktop-catalog-accessories@1x.jpg");
+    background-position: left;
   }
 }
 
-@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1280px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1280px) and (min-resolution: 144dpi), (min-width: 1280px) and (min-resolution: 1.5dppx) {
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .product--production {
     background-image: url("../img/desktop-catalog-production@2x.jpg");
   }
@@ -1591,7 +1592,6 @@ img {
     padding-right: 45px;
     padding-bottom: 37px;
     padding-left: 45px;
-    background-size: 100% auto;
   }
 
   .product::after {
