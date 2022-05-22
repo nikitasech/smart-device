@@ -1,49 +1,54 @@
 export class Accordion {
-  constructor(elAccordion, maxViewportSize, defaultOpenedTab = 0) {
-    this.elContentsAccordion = elAccordion.querySelectorAll('[data-accordion-content]');
-    this.elButtonsAccordion = elAccordion.querySelectorAll('[data-accordion-button]');
-    this.defaultOpenedTab = defaultOpenedTab;
+  constructor(elAccordion, maxViewportSize) {
+    this.elContents = elAccordion.querySelectorAll('[data-accordion-content]');
+    this.elButtons = elAccordion.querySelectorAll('[data-accordion-button]');
     this.maxViewportSize = maxViewportSize;
 
+    this.tabClickHandler = this.tabClickHandler.bind(this);
     this.init = this.init;
   }
 
-  openDefaultTab(numberTab) {
-    if (numberTab === this.defaultOpenedTab && this.defaultOpenedTab) {
-      this.elContentsAccordion[numberTab].classList.remove('is-closed');
-      this.elButtonsAccordion[numberTab].classList.remove('is-content-closed');
-    } else {
-      this.elContentsAccordion[numberTab].classList.add('is-closed');
-      this.elButtonsAccordion[numberTab].classList.add('is-content-closed');
-    }
+  closeTab(tab) {
+    this.elContents[tab].classList.add('is-closed');
+    this.elButtons[tab].classList.add('is-content-closed');
   }
 
-  resetTabs(openedTabNumber) {
-    for (let tab = 0; tab < this.elButtonsAccordion.length; tab++) {
-      if (tab !== openedTabNumber) {
-        this.elContentsAccordion[tab].classList.add('is-closed');
-        this.elButtonsAccordion[tab].classList.add('is-content-closed');
+  toggleTab(tab) {
+    this.elContents[tab].classList.toggle('is-closed');
+    this.elButtons[tab].classList.toggle('is-content-closed');
+  }
+
+  tabClickHandler(evt) {
+    for (let tab = 0; tab < this.elButtons.length; tab++) {
+      if (evt.target === this.elButtons[tab]) {
+        this.toggleTab(tab);
+      } else {
+        this.closeTab(tab);
       }
     }
   }
 
-  tabClickHandler(elContent, elButton, openedTabNumber) {
-    elButton.addEventListener('click', () => {
-      this.resetTabs(openedTabNumber);
+  windowResizeHandler() {
+    if (window.innerWidth > this.maxViewportSize) {
+      for (let tab = 0; tab < this.elButtons.length; tab++) {
+        this.elButtons[tab].setAttribute('disabled', '');
+        this.elButtons[tab].removeEventListener('click', this.tabClickHandler);
+      }
+      return;
+    }
 
-      elContent.classList.toggle('is-closed');
-      elButton.classList.toggle('is-content-closed');
-    });
+    for (let tab = 0; tab < this.elButtons.length; tab++) {
+      this.closeTab(tab);
+      this.elButtons[tab].removeAttribute('disabled', '');
+      this.elButtons[tab].addEventListener('click', this.tabClickHandler);
+    }
   }
 
   init() {
-    for (let tab = 0; tab < this.elButtonsAccordion.length; tab++) {
-      if (this.maxViewportSize <= window.innerWidth) {
-        this.elButtonsAccordion[tab].setAttribute('disabled', '');
-      }
+    this.windowResizeHandler();
 
-      this.openDefaultTab(tab);
-      this.tabClickHandler(this.elContentsAccordion[tab], this.elButtonsAccordion[tab], tab);
-    }
+    window.addEventListener('resize', () => {
+      this.windowResizeHandler();
+    });
   }
 }
