@@ -140,6 +140,12 @@ export class Modals {
       return;
     }
 
+    if (modal.querySelector('input')) {
+      setTimeout(() => {
+        modal.querySelector('input').focus();
+      }, 400);
+    }
+
     document.removeEventListener('click', this.documentClickHandler);
 
     this.openedModalElement = document.querySelector('.modal.is-active');
