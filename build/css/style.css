@@ -1111,6 +1111,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 50px;
   padding-right: calc((100% - 1220px) / 2);
   padding-bottom: 55px;
@@ -1121,7 +1124,7 @@ img {
 .main-footer__wrapper {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 160px;
+  margin-right: 20px;
 }
 
 .main-footer__logo {
@@ -1139,17 +1142,18 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 845px;
   padding-top: 2px;
 }
 
 .main-footer__nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (220px)[2];
-  grid-template-columns: repeat(2, 220px);
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+  -ms-grid-columns: (220px)[2];
+  grid-template-columns: repeat(2, 220px);
 }
 
 .main-footer__nav-title {
@@ -1178,7 +1182,7 @@ img {
 }
 
 .main-footer__office {
-  width: 345px;
+  max-width: 345px;
 }
 
 .main-footer__office-list {
@@ -1334,12 +1338,16 @@ img {
 }
 
 .connection {
-  padding-left: calc(((100% - 1220px) / 2) + 625px);
   color: #ffffff;
   background-image: url("../img/desktop-paper-airplane@1x.png"), -o-linear-gradient(310.8deg, #036693 calc((100% - 1220px + 600px) / 2), #00b2ff calc((100% - 1220px + 602px) / 2));
   background-image: url("../img/desktop-paper-airplane@1x.png"), linear-gradient(139.2deg, #036693 calc((100% - 1220px + 600px) / 2), #00b2ff calc((100% - 1220px + 602px) / 2));
   background-repeat: no-repeat;
   background-position: calc((100% - 1220px + 510px) / 2) 246px, 0 0;
+}
+
+.connection__form {
+  width: 595px;
+  margin-left: calc(((100% - 1220px) / 2) + 625px);
 }
 
 .connection__title {
@@ -1545,10 +1553,19 @@ img {
     padding-right: 30px;
   }
 
-  .connection {
+  .main-footer {
+    padding-left: 30px;
     padding-right: 30px;
-    padding-left: calc(((100% - 1220px) / 2) + 625px);
-    background-position: calc((100% - 1220px + 700px) / 2) 246px, 0;
+  }
+
+  .connection {
+    background-position: 4% 246px, 0 0;
+    background-size: 35%, auto;
+  }
+
+  .connection__form {
+    margin-right: 30px;
+    margin-left: auto;
   }
 }
 
@@ -1742,6 +1759,12 @@ img {
   .connection {
     background-color: #00b2ff;
     background-image: none;
+  }
+
+  .connection__form {
+    width: auto;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   .connection__title {
@@ -2102,6 +2125,12 @@ img {
 
   .catalog__mobile-title {
     display: block;
+  }
+
+  .connection__form {
+    width: auto;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .connection__title {

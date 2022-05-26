@@ -1,5 +1,4 @@
 .connection {
-  padding-left: calc(((100% - 1220px) / 2) + 625px);
   color: $color-default-white;
 
   background-image: url("../img/desktop-paper-airplane@1x.png"), linear-gradient(139.2deg, #036693 calc((100% - 1220px + 600px) / 2), $color-deep-sky-blue calc((100% - 1220px + 602px) / 2));
@@ -7,14 +6,35 @@
   background-position: calc((100% - 1220px + 510px) / 2) 246px, 0 0;
 
   @include vp-1279 {
-    padding-right: 30px;
-    padding-left: calc(((100% - 1220px) / 2) + 625px);
-    background-position: calc((100% - 1220px + 700px) / 2) 246px, 0;
+    background-position: 4% 246px, 0 0;
+    background-size: 35%, auto;
   }
 
   @include vp-1023 {
     background-color: $color-deep-sky-blue;
     background-image: none;
+  }
+}
+
+.connection__form {
+  width: 595px;
+  margin-left: calc(((100% - 1220px) / 2) + 625px);
+
+  @include vp-1279 {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  @include vp-1023 {
+    width: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  @include vp-767 {
+    width: auto;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 }
 
@@ -75,6 +95,7 @@
 
     grid-template-columns: 1fr;
   }
+
   row-gap: 20px;
 }
 
