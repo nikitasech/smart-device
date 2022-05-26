@@ -25,6 +25,10 @@
   }
 }
 
+.main-header__logo {
+  flex-shrink: 0;
+}
+
 .main-header ul {
   display: flex;
   flex-wrap: wrap;

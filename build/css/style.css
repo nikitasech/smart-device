@@ -1085,6 +1085,11 @@ img {
   background: linear-gradient(180deg, #041427 85%, transparent 100%);
 }
 
+.main-header__logo {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .main-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
