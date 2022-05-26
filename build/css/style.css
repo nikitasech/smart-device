@@ -611,6 +611,10 @@ img {
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .button:disabled {
@@ -647,6 +651,10 @@ img {
   top: calc(50% - 10px);
   left: 15px;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__field input,
@@ -1279,8 +1287,8 @@ img {
 }
 
 .about__content {
-  height: 160px;
-  margin-bottom: 32px;
+  height: 150px;
+  margin-bottom: 42px;
   overflow: hidden;
 }
 
