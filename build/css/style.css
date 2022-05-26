@@ -572,7 +572,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 215px;
+  max-width: 160px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -584,7 +584,7 @@ img {
   margin-bottom: 10px;
 }
 
-.socials__item:last-child {
+.socials__item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1141,7 +1141,7 @@ img {
 .main-footer__wrapper {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .main-footer__logo {
@@ -2020,6 +2020,7 @@ img {
   }
 
   .main-footer__wrapper {
+    margin-bottom: 17px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2049,6 +2050,7 @@ img {
   }
 
   .main-footer__office {
+    max-width: none;
     width: auto;
   }
 
