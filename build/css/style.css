@@ -570,6 +570,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 215px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -578,6 +581,7 @@ img {
 
 .socials__item {
   margin-right: 25px;
+  margin-bottom: 10px;
 }
 
 .socials__item:last-child {

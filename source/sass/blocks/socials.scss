@@ -1,5 +1,7 @@
 .socials {
   display: flex;
+  flex-wrap: wrap;
+  width: 215px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -9,6 +11,7 @@
 
 .socials__item {
   margin-right: 25px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -25,5 +28,6 @@
 
 .socials__icon {
   display: block;
+
   fill: $color-alice-blue;
 }
